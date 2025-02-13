@@ -1,0 +1,22 @@
+{
+  "name": "welcome-bot-2",
+  "version": "1.0.0",
+  "description": "A welcome bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch . --trace-warnings index.js"
+  },
+  "keywords": [],
+  "author": "YOG TANDEL",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.16.3",
+    "dotenv": "^16.4.7",
+    "express": "^4.18.2",
+    "welcome-bot-2": "file:"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
