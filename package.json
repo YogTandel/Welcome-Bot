@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch . --trace-warnings index.js",
     "start": "node index.js"
   },
   "keywords": [],
@@ -16,4 +17,7 @@
     "express": "^4.18.2",
     "welcome-bot-2": "file:"
   },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
