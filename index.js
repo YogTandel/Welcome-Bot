@@ -8,7 +8,17 @@ const {
   ActivityType,
 } = require("discord.js");
 require("dotenv").config("./.env"); // Load environment variables from .env file
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3000;
 
+app.get("/", (req, res) => {
+  res.send(`${client.user.username}'s Bot is running`);
+});
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
 // Create a new client | Don't change the intents
 const client = new Client({
   intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMembers],
