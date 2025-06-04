@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send(`${client.user.username}'s Bot is running`);
+  res.send(`Bot is running`);
   console.log(`🚀 Bot is running`);
 });
 
